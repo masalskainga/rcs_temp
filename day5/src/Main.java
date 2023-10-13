@@ -2,32 +2,42 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        sample1();
-//
-//        for(int i = 0; i < 5; i++){
-//            sample1();
-//        }
-//        int a = sample2();
-//        System.out.println(a);
+        sample1();
 
-//        System.out.println(sample2());
-//
-//        System.out.println(uzd1());
+        for(int i = 0; i < 5; i++){
+            sample1();
+        }
+        int a = sample2();
+        System.out.println(a);
+
+        System.out.println(sample2());
+
+        System.out.println(uzd1());
 
 
         uzd2("&&&&");
+        uzd2pasn(3);
     }
 
-    static void uzd2(String a){
+    public static void uzd2pasn(int a){
+        for(int i = 0; i < a; i++){
+            System.out.println("&&&&");
+        }
+    }
+    public static void uzd2(String a){
+
         System.out.println(a);
     }
+
+
     public static String uzd1(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ievadiet tekstu!");
+
         String result = "";
         for(int i = 0; i < 3; i++) {
-
+            System.out.println("Ievadiet tekstu!");
             String input = sc.nextLine();
+            result = result + input;
         }
 
         return  result;
