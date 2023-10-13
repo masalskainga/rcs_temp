@@ -24,11 +24,9 @@ public static void mdokt11() {
         String fraze = sc.nextLine();
 
     }
-    int fraze = ievade.length();
-    System.out.println(fraze);
-    if (ievade.equals(fraze)) ;
-
+    String fraze = ievade.length();
     }
+
 }
 
 
