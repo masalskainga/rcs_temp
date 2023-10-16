@@ -23,15 +23,16 @@ public static void mdokt11() {
     String ievade = sc.nextLine();
 
     int garaka = 0;
+
     for (int i = 0; i < number; i++) {
         System.out.println("Lūdzu, ievadi frāzi.");
         String fraze = sc.nextLine();
         garaka = garaka + fraze.length();
-        if(fraze.length > garaka){
+        if(fraze.length() < garaka){
             System.out.println(garaka);
-        }
     }
 
+    }
     }
 
 }
