@@ -20,6 +20,11 @@ public class Main {
     }
 
     public static void uzd2pasn(int a){
+        if (a<1){
+            System.out.println("Kļūda!");
+        }else{
+            System.out.println(a);
+        }
         for(int i = 0; i < a; i++){
             System.out.println("&&&&");
         }
