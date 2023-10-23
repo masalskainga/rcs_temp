@@ -30,7 +30,7 @@ public class Geometrija {
 
     }
 
-    public static double rectangle(double side1, double side2, double side3, double side4) {
+    public static double rectangle(double side1, double side2, double side3, double side4){
         double perimeter = side1 + side2 + side3 + side4;
 
         System.out.println("Četrstūra perimetrs ir: " + perimeter);
