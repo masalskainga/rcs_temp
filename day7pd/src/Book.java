@@ -11,7 +11,12 @@ public class Book {
         System.out.println(author);
         System.out.println(title);
         System.out.println(year);
-        return
+
+
+    }
+    public int yearcalc(){
+        int result = 2023 - year;
+        return result;
     }
 
 }
