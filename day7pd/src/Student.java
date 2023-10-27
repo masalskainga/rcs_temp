@@ -11,11 +11,12 @@ public class Student {
         this.faculty = faculty;
         this.course = course;
 
-        if (this.course < 1){
-            System.out.println("1");
-        }else if(this.course > 4){
-            System.out.println("Kļūda");
+        if (this.course > 4){
             this.course = 4;
+        }else if(this.course < 1){
+            this.course = 1;
+        }else{
+            this.course = course;
         }
 
 
