@@ -18,19 +18,20 @@ public class Tasks {
 
     public static void task2() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ievadiet, cik virknes rakstīsiet");
-        int skaitlis = sc.nextInt();
-        String[] virkne2 = new String[skaitlis];
+        System.out.println("Ievadiet masīva garumu");
+        int garums = sc.nextInt();
+
+        int[] masivs = new int[garums];
 
 
-        for (int i = 0; i < virkne2.length; i++) {
-            System.out.println("Ievadi tekstu");
-            virkne2[i] = sc.nextLine();
+        for (int i = 0; i < masivs.length; i++) {
+            System.out.println("Lūdzu ievadiet skaitli");
+            masivs[i] = sc.nextInt();
         }
         System.out.println("......");
 
-        for (int i = 0; i < virkne2.length; i++) {
-            System.out.println(virkne2[i] + ",");
+        for (int i = 0; i < masivs.length; i++) {
+            System.out.println(masivs[i] + ",");
         }
         System.out.println();
     }
