@@ -5,9 +5,9 @@ public class majasdarbs8 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet masīva garumu");
         int garums = sc.nextInt();
-        int[] masivs = new int[garums];
+        double[] masivs = new double[garums];
 
-        int sum = 0;
+        double sum = 0;
         for (int i = 0; i < masivs.length; i++) {
             System.out.println("Lūdzu ievadiet skaitli");
             masivs[i] = sc.nextInt();
@@ -42,11 +42,13 @@ public class majasdarbs8 {
         numurs[8] = 6;
         numurs[9] = 77;
 
-
-        System.out.println("----");
-
-        for(int i = 0; i < numurs.length; i++){
-            System.out.println(numurs[]);
-        }
+        for(int i = 0; i < numurs.length; i++) {
+            if(numurs[i] == skaitlis){
+            System.out.println("Skaitlis atrodas" + numurs[i]);
+            found = true;
+            }
     }
+        if(found == false){
+            System.out.println("Skaitlis nav atrasts.");
+        }
 }
